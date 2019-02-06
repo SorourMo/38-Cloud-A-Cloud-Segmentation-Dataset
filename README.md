@@ -34,7 +34,16 @@ Each patch has 4 corresponding spectral channels which are Red (band 4), Green (
 | 4  | Red  | 630-680|
 | 5  | Nir  |845-885|
 
+### Example Images:
+Below is an example of training patches:  
 
+<!---<img align="left" width="120" height="120" src=/sample/truecolor_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg > ---!>
+
+<img align="left" width="120" height="120" src=/sample/gt_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg >
+<img align="left" width="120" height="120" src=/sample/red_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg >
+<img align="left" width="120" height="120" src=/sample/green_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg >
+<img align="left" width="120" height="120" src=/sample/blue_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg >
+<img align="left" width="120" height="120" src=/sample/nir_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg >  
 
 ### Some Important Points:
 1. Thin clouds (haze) are also considered as clouds (as well as thick clouds).
