@@ -1,6 +1,6 @@
 # 38-Cloud: A Cloud Segmentation Dataset
 This dataset includes 38 [Landsat 8](https://www.usgs.gov/land-resources/nli/landsat/landsat-8?qt-science_support_page_related_con=0#qt-science_support_page_related_con) scene images and their manually extracted pixel-level ground truths for cloud detection. 38-Cloud dataset is introduced in [1](https://arxiv.org/pdf/1901.10077.pdf), yet it is a modification of the dataset in [2](https://ieeexplore.ieee.org/document/8547095).  
-The entire images of these scenes are cropped into multiple 384*384 patches to be proper for deep learning based semantic segmentation. There are 8400 patches for training and 9201 patches for testing. 
+The entire images of these scenes are cropped into multiple 384*384 patches to be proper for deep learning based semantic segmentation. There are 8400 patches for training and 9201 patches for testing.
 Each patch has 4 corresponding spectral channels which are Red (band 4), Green (band 3), Blue (band 2), and Near Infrared (band 5). Unlike other computer vision images, these channels are not combined together. Instead, they are in their correspondig directories. The following the directory tree of this dataset is as follows:
 
 
@@ -30,8 +30,8 @@ Some important points:
 1. Thin clouds (haze) are also considered as clouds (as well as thick clouds).
 2. Natural color images are false color images used for further visualization purposes. They have not used in the trainig and test phase of [1] and [2].  
 
-If you found this datase useful for our research please cite these two papers:  
-<pre>
+If you found this datase useful for your research please cite these two papers:  
+
 @article{38-cloud-1,  
   author    = {S. Mohajerani and  
                P. Saeedi},  
@@ -52,12 +52,12 @@ doi={10.1109/MMSP.2018.8547095},
 ISSN={2473-3628},   
 month={Aug},  
 }
-  
-***  
-[1]S. Mohajerani, T. A. Krammer and P. Saeedi, "A Cloud Detection Algorithm for Remote Sensing Images Using Fully Convolutional Neural Networks," 2018 IEEE 20th International Workshop on Multimedia Signal Processing (MMSP), Vancouver, BC, 2018, pp. 1-5.
+ 
+---- 
+[1] S. Mohajerani, T. A. Krammer and P. Saeedi, "A Cloud Detection Algorithm for Remote Sensing Images Using Fully Convolutional Neural Networks," 2018 IEEE 20th International Workshop on Multimedia Signal Processing (MMSP), Vancouver, BC, 2018, pp. 1-5.
 doi: 10.1109/MMSP.2018.8547095
 URL: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8547095&isnumber=8547039  
 
-[2]S. Mohajerani and P. Saeedi, “Cloud-Net: An end-to-end
+[2] S. Mohajerani and P. Saeedi, “Cloud-Net: An end-to-end
 cloud detection algorithm for Landsat 8 imagery,”
 CoRR, vol. abs/1901.10077, 2019.
