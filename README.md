@@ -59,7 +59,7 @@ Below is an example of a training patch:
 
 If you found this dataset useful for your research please cite these two papers:    
 
-
+```
 @article{38-cloud-1,  
   author    = {S. Mohajerani and  
                P. Saeedi},  
@@ -71,16 +71,16 @@ If you found this dataset useful for your research please cite these two papers:
 }
 
 @INPROCEEDINGS{38-cloud-2,   
-author={S. Mohajerani and T. A. Krammer and P. Saeedi},   
-booktitle={2018 IEEE 20th International Workshop on Multimedia Signal Processing (MMSP)},   
-title={A Cloud Detection Algorithm for Remote Sensing Images Using Fully Convolutional Neural Networks},   
-year={2018},    
-pages={1-5},   
-doi={10.1109/MMSP.2018.8547095},   
-ISSN={2473-3628},   
-month={Aug},  
+  author={S. Mohajerani and T. A. Krammer and P. Saeedi},   
+  booktitle={2018 IEEE 20th International Workshop on Multimedia Signal Processing (MMSP)},   
+  title={A Cloud Detection Algorithm for Remote Sensing Images Using Fully Convolutional Neural Networks},   
+  year={2018},    
+  pages={1-5},   
+  doi={10.1109/MMSP.2018.8547095},   
+  ISSN={2473-3628},   
+  month={Aug},  
 }
-
+```
 ---- 
 [1] S. Mohajerani, T. A. Krammer and P. Saeedi, "A Cloud Detection Algorithm for Remote Sensing Images Using Fully Convolutional Neural Networks," 2018 IEEE 20th International Workshop on Multimedia Signal Processing (MMSP), Vancouver, BC, 2018, pp. 1-5.
 doi: 10.1109/MMSP.2018.8547095
