@@ -34,19 +34,34 @@ Each patch has 4 corresponding spectral channels which are Red (band 4), Green (
 | 5  | Nir  |845-885|
 
 ### Example Images:
-Below is an example of a training patche:  
+Below is an example of a training patch:  
 
-
-Solarized dark             |  Solarized Ocean
-:-------------------------:|:-------------------------:
-![](https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset/blob/master/sample/blue_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg)  |  ![](https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset/blob/master/sample/blue_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg)
+<div class="row"> 
+<div class="column">
+<img src="./sample/red_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
+ </div> </div> 
+<div class="column">
+<img src="./sample/green_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
+</div> 
+  <div class="column">
+<img src="./sample/blue_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
+</div> 
+  <div class="column">
+<img src="./sample/nir_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
+</div> 
+  <div class="column">
+<img src="./sample/truecolor_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
+</div> 
+  <div class="column">
+<img src="./sample/gt_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
+</div> 
 
 ### Some Important Points:
 1. Thin clouds (haze) are also considered as clouds (as well as thick clouds).
-2. Natural color images are false color images used for further visualization purposes. They have not used in the trainig and test phase of \[1] and \[2]\.  
-3. Some of the patches do not have useful information (0 pixl values) in them. That is because of black margins around the Landsat 8 images.
+2. Natural color images are false color images used for further visualization purposes. They have not used in the training and test phase of \[1] and \[2]\.  
+3. Some of the patches do not have useful information (0 pixel values) in them. That is because of black margins around the Landsat 8 images.
 
-If you found this datase useful for your research please cite these two papers:   
+If you found this dataset useful for your research please cite these two papers:   
 
 @article{38-cloud-1,  
   author    = {S. Mohajerani and  
