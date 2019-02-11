@@ -41,26 +41,16 @@ Below is an example of a training patch:
 
 <div class="row"> 
   <div class="column">
-    <img src="./sample/red_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120"  > 
-</div>
-  <div class="column">
-    <img src="./sample/green_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120"  > 
-</div>
-  <div class="column">
-    <img src="./sample/blue_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" > 
-</div>
-  <div class="column">
-    <img src="./sample/nir_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" > 
-</div>
-  <div class="column">
-    <img src="./sample/truecolor_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120"  > 
- </div>
-  <div class="column">
-    <img src="./sample/gt_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120"  > 
+    <img src="./sample/red_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
+    <img src="./sample/green_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120"hspace=5 > 
+    <img src="./sample/blue_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
+    <img src="./sample/nir_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
+    <img src="./sample/truecolor_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
+    <img src="./sample/gt_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
    </div>
 </div>
   
-&emsp;&emsp;&emsp;&emsp;Red &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Green &emsp;&emsp;&emsp;&emsp;&emsp; Blue &emsp;&emsp;&emsp;&emsp;&emsp; NIR &emsp;&emsp;&emsp;&emsp;&emsp; False Color&emsp;&emsp;&emsp; Ground truth
+&emsp;&emsp;&emsp;&emsp;Red &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Green &emsp;&emsp;&emsp;&emsp;&emsp; Blue &emsp;&emsp;&emsp;&emsp;&emsp; NIR &emsp;&emsp;&emsp;&emsp;&emsp; False Color&emsp;&emsp;Ground truth
   
 ### Some Important Points:
 1. Thin clouds (haze) are also considered as clouds (as well as thick clouds).
