@@ -50,7 +50,7 @@ Below is an example of a training patch:
    </div>
 </div>
   
-&emsp;&emsp;&emsp;Red &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Green &emsp;&emsp;&emsp;&emsp;&emsp; Blue &emsp;&emsp;&emsp;&emsp;&emsp; NIR &emsp;&emsp;&emsp;&emsp;&emsp; False Color&emsp;&emsp;&emsp;Ground truth
+&emsp;&emsp;&emsp;Red &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Green &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; Blue &emsp;&emsp;&emsp;&emsp;&emsp; NIR &emsp;&emsp;&emsp;&emsp;&emsp; False Color&emsp;&emsp;&emsp;Ground truth
   
 ### Some Important Points:
 1. Thin clouds (haze) are also considered as clouds (as well as thick clouds).
