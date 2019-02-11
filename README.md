@@ -22,7 +22,9 @@ Each patch has 4 corresponding spectral channels which are Red (band 4), Green (
 │------------├──Natural_False_Color  
 │------------├──Entire_scene_gts  
 │------------├──test_patches_38-Cloud.csv  
-│------------├──test_sceneids_38-Cloud.csv     
+│------------├──test_sceneids_38-Cloud.csv   
+
+***Click [here](http://goo.gl/nW1hQz) for downloading the dataset***
   
 ### Landsat 8 Spectral Ranges:<br>  
 
@@ -37,9 +39,9 @@ Each patch has 4 corresponding spectral channels which are Red (band 4), Green (
 Below is an example of a training patch:  
 
 <div class="row"> 
-<div class="row">
-<img src="./sample/red_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
- </div> </div> 
+  <div class="row">
+    <img src="./sample/red_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
+  </div>  
 <div class="row">
 <img src="./sample/green_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
 </div> 
@@ -55,7 +57,9 @@ Below is an example of a training patch:
   <div class="row">
 <img src="./sample/gt_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
 </div> 
-
+  </div>
+&emsp;&emsp;&emsp;&emsp;Red &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Green &emsp;&emsp;&emsp;&emsp;&emsp; Blue &emsp;&emsp;&emsp;&emsp;&emsp; NIR &emsp;&emsp;&emsp;&emsp;&emsp; False Color&emsp;&emsp;&emsp; Ground truth
+  
 ### Some Important Points:
 1. Thin clouds (haze) are also considered as clouds (as well as thick clouds).
 2. Natural color images are false color images used for further visualization purposes. They have not used in the training and test phase of \[1] and \[2]\.  
