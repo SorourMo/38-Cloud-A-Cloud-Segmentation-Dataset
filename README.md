@@ -22,9 +22,10 @@ Each patch has 4 corresponding spectral channels which are Red (band 4), Green (
 │------------├──Natural_False_Color  
 │------------├──Entire_scene_gts  
 │------------├──test_patches_38-Cloud.csv  
-│------------├──test_sceneids_38-Cloud.csv   
-
-***Click [here](http://goo.gl/nW1hQz) for downloading the dataset***
+│------------├──test_sceneids_38-Cloud.csv    
+  
+    
+#### *Click [here](http://goo.gl/nW1hQz) for downloading the dataset*
   
 ### Landsat 8 Spectral Ranges:<br>  
 
