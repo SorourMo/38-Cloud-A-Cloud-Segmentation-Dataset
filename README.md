@@ -40,22 +40,22 @@ Each patch has 4 corresponding spectral channels which are Red (band 4), Green (
 Below is an example of a training patch:  
 
 <div class="row"> 
-  <div class="row">
+  <div class="colummn">
     <img src="./sample/red_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
   </div>
-<div class="row">
+<div class="colummn">
 <img src="./sample/green_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
 </div>
-  <div class="row">
+  <div class="colummn">
 <img src="./sample/blue_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
 </div> 
-  <div class="row">
+  <div class="colummn">
 <img src="./sample/nir_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
 </div> 
-  <div class="row">
+  <div class="colummn">
 <img src="./sample/truecolor_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
 </div> 
-  <div class="row">
+  <div class="colummn">
 <img src="./sample/gt_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
 </div> 
 </div>
