@@ -26,7 +26,7 @@ The directory tree of this dataset is as follows:
 │------------├──test_sceneids_38-Cloud.csv    
   
     
-#### *Click [here](http://goo.gl/nW1hQz) for downloading the dataset.*
+#### *Click [here](https://goo.gl/683SHf) for downloading the dataset.*
   
 ### Landsat 8 Spectral Ranges:<br>  
 
