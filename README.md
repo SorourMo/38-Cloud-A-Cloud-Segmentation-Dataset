@@ -1,6 +1,6 @@
 # 38-Cloud: A Cloud Segmentation Dataset
 This dataset includes 38 [Landsat 8](https://www.usgs.gov/land-resources/nli/landsat/landsat-8?qt-science_support_page_related_con=0#qt-science_support_page_related_con) scene images and their manually extracted pixel-level ground truths for cloud detection. 38-Cloud dataset is introduced in [[1]](https://arxiv.org/pdf/1901.10077.pdf), yet it is a modification of the dataset in [[2]](https://ieeexplore.ieee.org/document/8547095).  
-The entire images of these scenes are cropped into multiple 384*384 patches to be proper for deep learning based semantic segmentation. There are 8400 patches for training and 9201 patches for testing.
+The entire images of these scenes are cropped into multiple 384*384 patches to be proper for deep learning-based semantic segmentation algorithms. There are 8400 patches for training and 9201 patches for testing.
 Each patch has 4 corresponding spectral channels which are Red (band 4), Green (band 3), Blue (band 2), and Near Infrared (band 5). Unlike other computer vision images, these channels are not combined together. Instead, they are in their correspondig directories. 
 
 The directory tree of this dataset is as follows:
@@ -38,7 +38,7 @@ The directory tree of this dataset is as follows:
 | 5  | NIR  |845-885|
 
 ### Example Images:
-Below is an example of a training patch:  
+Below is an example of a 384*384 training patch:  
 
 <div>
   <img src="./sample/red_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg" width="120" height="120" hspace=5 > 
