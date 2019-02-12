@@ -27,7 +27,8 @@ The directory tree of this dataset is as follows:
   
     
 #### *Click [here](https://goo.gl/683SHf) for downloading the dataset.*
-  
+#### *Click <a href="https://goo.gl/683SHf" target="_blank">here</a> for downloading the dataset.*  
+
 ### Landsat 8 Spectral Ranges:<br>  
 
 | Band #  | Name | Spectral Range (nm) |
