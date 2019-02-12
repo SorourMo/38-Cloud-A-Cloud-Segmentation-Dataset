@@ -62,6 +62,18 @@ Below is an example of a training patch:
    </div>
 </div>
 
+<div style="display:flex">
+  <div style="flex: 1 0 0">
+      <img src="./sample/red_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg"> 
+      <p>Fig.1 - Trulli, Puglia, Italy.</p>
+  </div>
+  <div style="flex: 1 0 0">
+      <img src="./sample/red_patch_192_10_by_12_LC08_L1TP_002053_20160520_20170324_01_T1.jpg"> 
+      <p>Fig.1 - Trulli, Puglia, Italy.</p>
+  </div>
+  
+  
+</div>
 
 
 &emsp;&emsp;&emsp;Red &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Green &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Blue &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; NIR &emsp;&emsp;&emsp;&emsp;&emsp; False color&emsp;&emsp;&emsp;Ground truth
