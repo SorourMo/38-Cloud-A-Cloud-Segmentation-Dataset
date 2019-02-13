@@ -1,5 +1,5 @@
 # 38-Cloud: A Cloud Segmentation Dataset
-This dataset includes 38 [Landsat 8](https://www.usgs.gov/land-resources/nli/landsat/landsat-8?qt-science_support_page_related_con=0#qt-science_support_page_related_con) scene images and their manually extracted pixel-level ground truths for cloud detection. 38-Cloud dataset is introduced in [[1]](https://arxiv.org/pdf/1901.10077.pdf), yet it is a modification of the dataset in [[2]](https://ieeexplore.ieee.org/document/8547095).  
+This dataset contains 38 [Landsat 8](https://www.usgs.gov/land-resources/nli/landsat/landsat-8?qt-science_support_page_related_con=0#qt-science_support_page_related_con) scene images and their manually extracted pixel-level ground truths for cloud detection. 38-Cloud dataset is introduced in [[1]](https://arxiv.org/pdf/1901.10077.pdf), yet it is a modification of the dataset in [[2]](https://ieeexplore.ieee.org/document/8547095).  
 The entire images of these scenes are cropped into multiple 384*384 patches to be proper for deep learning-based semantic segmentation algorithms. There are 8400 patches for training and 9201 patches for testing.
 Each patch has 4 corresponding spectral channels which are Red (band 4), Green (band 3), Blue (band 2), and Near Infrared (band 5). Unlike other computer vision images, these channels are not combined together. Instead, they are in their correspondig directories. 
 
@@ -54,7 +54,7 @@ Below is an example of a 384*384 training patch:
 ### Some Important Points:
 1. Thin clouds (haze) are also considered as clouds (as well as thick clouds).
 2. Natural color images are false color images used for further visualization purposes. They have not used in the training and test phase of \[1] and \[2]\.  
-3. Some of the patches do not have useful information (0 pixel values) in them. That is because of black margins around the Landsat 8 images.
+3. Some of the patches do not have useful information (0 pixel values) in them. That is because of the black margins around the Landsat 8 images.
 
 If you found this dataset useful for your research please cite these two papers:    
 
