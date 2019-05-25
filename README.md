@@ -76,7 +76,7 @@ We have prepared a simple Matlab code to help researchers evaluate their results
 
 5- Name of the patches play an important role to find the exact correct location of patches in a complete scene mask. Please avoid renaming test and predicted patches.
 
-
+**************************************
 If you found this dataset useful for your research please cite these two papers:    
 
 ```
