@@ -1,8 +1,8 @@
-%% This mfile reads the predicted images obtained by activation function 
-% of the last layer in a CNN (for instance, output of a simoid). Then, it
-% stiches those patches masks up together to create a mask for entire Landsat
-% 8 scene, and at last, it calculates the quantitave evaluators including
-% Jaccard index, precision, recall, specificity, and accuray in %.
+%% This mfile reads the predicted images obtained by the activation function 
+% of the last layer in a CNN (for instance, the output of a sigmoid). Then, it
+% stitches those patches masks up together to create a mask for entire Landsat
+% 8 scene, and at last, it calculates the quantitative evaluators including
+% Jaccard index, precision, recall, specificity, and accuracy in %.
 
 % Author: Sorour Mohajerani
 % Simon Fraser University, Canada
@@ -20,7 +20,7 @@ pr_patch_size_cols = 384;
 %"0" for clear and "1" for cloud
 classes = [0,1]; 
 
-% should be 1 for printing out the confusion matrix of each scene 
+% Should be 1 for printing out the confusion matrix of each scene 
 conf_matrix_print_out = 0; 
 
 %Threshold for binarizing the output of the network and creating a binary 
@@ -99,11 +99,11 @@ fprintf(' %2.3f , %2.3f , %2.3f , %2.3f , %2.3f \n', mean_on_test_data(1,1), ...
     mean_on_test_data(1,5));
 
 %% Saving the evaluators in a excel file
-excel_baseFileName = strcat(complete_folder,'.xlsx');%in this excel file the specs of each sceneiD will be written
+excel_baseFileName = strcat(complete_folder,'.xlsx');
 excelpath = fullfile(preds_folder_root, excel_baseFileName);
 xlswrite(excelpath,{'Scene ID','Threshold','Precision', 'Recall', 'Specificity', 'Jaccard', 'Accuracy',...
     '#','100-Precision','100-Recall','1-Specificity'},'sheet1', 'A1:K1');        
-position1 = strcat('A',num2str(2)); %ranges in excel starts from 1 which is for the column tags
+position1 = strcat('A',num2str(2)); 
 position2 = strcat('K',num2str(n+1)); 
 position = strcat(position1,':',position2);
 xlswrite(excelpath,scene_assess,'sheet1', position);
@@ -167,7 +167,7 @@ function  related_patches = get_patches_for_sceneid (result_root, preds_dir, sce
             (desired_rownums(1,nsp)+2,1).name)};
     end
 end
-%% This function removes the zero pads around a compete scene mask.
+%% This function removes the zero pads around a complete scene mask.
 % This  padding had been added to each scene before cropping it to 
 % small patches
 
