@@ -1,6 +1,6 @@
 %% This mfile reads the predicted images obtained by the activation function 
 % of the last layer in a CNN (for instance, the output of a sigmoid). Then, it
-% stitches those patches masks up together to create a mask for entire Landsat
+% stitches those patch masks up together to create a mask for a complete Landsat
 % 8 scene, and at last, it calculates the quantitative evaluators including
 % Jaccard index, precision, recall, specificity, and accuracy in %.
 
