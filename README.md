@@ -86,7 +86,6 @@ If you found this dataset useful for your research please cite these two papers:
 	year={(forthcoming) 2019},
 	archivePrefix={arXiv},
 	note={\textit{to appear at IEEE International Geoscience and Remote Sensing Symposium (IGARSS)}}
-} 
 }
 
 @INPROCEEDINGS{38-cloud-2,   
