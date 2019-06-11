@@ -82,16 +82,16 @@ If you found this dataset useful for your research please cite these two papers:
 ```
 @article{38-cloud-1,  
   author={S. Mohajerani and P. Saeedi},
-	title={{"Cloud-{N}et: {A}n End-to-end Cloud Detection Algorithm for {L}andsat 8 Imagery"}},
-	year={(forthcoming) 2019},
-	archivePrefix={arXiv},
-	note={\textit{to appear at IEEE International Geoscience and Remote Sensing Symposium (IGARSS)}}
+  title={{"Cloud-{N}et: {A}n End-to-end Cloud Detection Algorithm for {L}andsat 8 Imagery"}},
+  year={(forthcoming) 2019},
+  archivePrefix={arXiv},
+  note={\textit{to appear at 2019 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)}}
 }
 
 @INPROCEEDINGS{38-cloud-2,   
   author={S. Mohajerani and T. A. Krammer and P. Saeedi},   
   booktitle={2018 IEEE 20th International Workshop on Multimedia Signal Processing (MMSP)},   
-  title={A Cloud Detection Algorithm for Remote Sensing Images Using Fully Convolutional Neural Networks},   
+  title={{"A Cloud Detection Algorithm for Remote Sensing Images Using Fully Convolutional Neural Networks"}},   
   year={2018},    
   pages={1-5},   
   doi={10.1109/MMSP.2018.8547095},   
