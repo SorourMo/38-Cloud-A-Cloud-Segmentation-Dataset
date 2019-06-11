@@ -81,13 +81,12 @@ If you found this dataset useful for your research please cite these two papers:
 
 ```
 @article{38-cloud-1,  
-  author    = {S. Mohajerani and  
-               P. Saeedi},  
-  title     = {Cloud-{N}et: {A}n end-to-end Cloud Detection Algorithm for {L}andsat 8 Imagery},  
-  journal   = {CoRR},  
-  volume    = {abs/1901.10077},  
-  year      = {2019},  
-  archivePrefix = {arXiv},  
+  author={S. Mohajerani and P. Saeedi},
+	title={{"Cloud-{N}et: {A}n End-to-end Cloud Detection Algorithm for {L}andsat 8 Imagery"}},
+	year={(forthcoming) 2019},
+	archivePrefix={arXiv},
+	note={\textit{to appear at IEEE International Geoscience and Remote Sensing Symposium (IGARSS)}}
+} 
 }
 
 @INPROCEEDINGS{38-cloud-2,   
@@ -106,7 +105,7 @@ If you found this dataset useful for your research please cite these two papers:
 doi: 10.1109/MMSP.2018.8547095
 URL: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8547095&isnumber=8547039  
 
-[2] S. Mohajerani and P. Saeedi, “Cloud-Net: An end-to-end
-cloud detection algorithm for Landsat 8 imagery,”
-CoRR, vol. abs/1901.10077, 2019.
+[2] S. Mohajerani and P. Saeedi. "Cloud-Net: An End-to-end Cloud Detection Algorithm for Landsat
+8 Imagery". (forthcoming) 2019. to appear at IEEE International Geoscience and Remote
+Sensing Symposium (IGARSS).
 URL: https://arxiv.org/pdf/1901.10077.pdf
