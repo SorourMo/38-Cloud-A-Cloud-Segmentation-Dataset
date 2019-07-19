@@ -55,7 +55,7 @@ Below is an example of a 384*384 training patch:
   
 ### Some Important Points:
 1. Thin clouds (haze) are also considered as clouds (as well as thick clouds).
-2. Natural color images are false color images used for further visualization purposes. They have not used in the training and test phase of \[1] and \[2]\.  
+2. Natural color images are false color images used for further visualization purposes. They have not been used in the training and test phase of \[1] and \[2]\.  
 3. Some of the patches do not have useful information (0 pixel values) in them. That is because of the black margins around the Landsat 8 images.
 
 ## Evaluation over 38-Cloud Dataset:
