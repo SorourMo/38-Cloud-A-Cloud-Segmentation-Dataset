@@ -59,7 +59,7 @@ Below is an example of a 384*384 training patch:
 3. Some of the patches do not have useful information (0 pixel values) in them. That is because of the black margins around the Landsat 8 images.
 
 ## Evaluation over 38-Cloud Dataset:
-We have prepared a simple Matlab code to help researchers evaluate their results obtained by his dataset. You can find in in the "evaluation" directory. Please note that for the sake of consistency we have not provided users with ground truths of each 384*384 test patch, but with the ground truth of the entire Landsat 8 scenes. In order to generate a complete cloud mask from small patch masks and compare it with ground truths, please follow these instructions:
+We have prepared a simple Matlab code to help researchers evaluate their results obtained by his dataset. You can find it in the "evaluation" directory. Please note that for the sake of consistency we have not provided users with ground truths of each 384*384 test patch, but with the ground truth of the entire Landsat 8 scenes. In order to generate a complete cloud mask from small patch masks and compare it with ground truths, please follow these instructions:
 
 1- Preparing a directory for the predicted patch masks same as below:
 
