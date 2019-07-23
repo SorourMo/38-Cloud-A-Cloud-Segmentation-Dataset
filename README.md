@@ -55,11 +55,11 @@ Below is an example of a 384*384 training patch:
   
 ### Some Important Points:
 1. Thin clouds (haze) are also considered as clouds (as well as thick clouds).
-2. Natural color images are false color images used for further visualization purposes. They have not used in the training and test phase of \[1] and \[2]\.  
+2. Natural color images are false color images used for further visualization purposes. They have not been used in the training and test phase of \[1] and \[2]\.  
 3. Some of the patches do not have useful information (0 pixel values) in them. That is because of the black margins around the Landsat 8 images.
 
 ## Evaluation over 38-Cloud Dataset:
-We have prepared a simple Matlab code to help researchers evaluate their results obtained by his dataset. You can find in in the "evaluation" directory. Please note that for the sake of consistency we have not provided users with ground truths of each 384*384 test patch, but with the ground truth of the entire Landsat 8 scenes. In order to generate a complete cloud mask from small patch masks and compare it with ground truths, please follow these instructions:
+We have prepared a simple Matlab code to help researchers evaluate their results obtained by this dataset. You can find it in the "evaluation" directory. Please note that for the sake of consistency we have not provided users with ground truths of each 384*384 test patch, but with the ground truth of the entire Landsat 8 scenes. In order to generate a complete cloud mask from small patch masks and compare it with ground truths, please follow these instructions:
 
 1- Preparing a directory for the predicted patch masks same as below:
 
