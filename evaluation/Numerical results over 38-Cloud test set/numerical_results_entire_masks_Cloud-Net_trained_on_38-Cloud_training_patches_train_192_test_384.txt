@@ -1,0 +1,5 @@
+Threshold= 
+0.047059 
+
+Precision, Recall, Specificity, Jaccard, Overall Accuracy 
+91.235685,  84.857239, 98.675934, 78.503779, 96.485916
