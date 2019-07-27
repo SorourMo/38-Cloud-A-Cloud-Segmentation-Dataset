@@ -7,7 +7,8 @@
 % Author: Sorour Mohajerani
 % Simon Fraser University, Canada
 % email: smohajer@sfu.ca
-% First version: 11 May 2017; This version: v1.4
+% First version: 11 May 2017; This version: v1.5 (27 July 2019)
+
 %%
 %clear
 gt_folder_path = ('path_to_38-Cloud_test_set_ground_truths');
@@ -32,7 +33,8 @@ thresh = 12 / 255; % The threshold used in Cloud-Net
 all_uniq_sceneid = extract_unique_sceneids(preds_folder_root, preds_folder);
 
 %% The patch masks are put together to generate a complete scene mask
-
+QE = [];
+scene_assess = {};
 for n = 1:length(all_uniq_sceneid)
     if n == length(all_uniq_sceneid)
         fprintf('Working on sceneID # %d : %s \n\n', n, char(all_uniq_sceneid(n,1)));
@@ -69,7 +71,7 @@ for n = 1:length(all_uniq_sceneid)
     end
     
     % Removing the zero padded distance around the whole mask
-    complete_pred_mask = unzeropad (complete_pred_mask,gt);
+    complete_pred_mask = unzeropad (complete_pred_mask, gt);
     
     % Saving complete scene predicted masks    
     complete_folder = strcat('entire_masks_',char(preds_folder));
@@ -81,12 +83,11 @@ for n = 1:length(all_uniq_sceneid)
     imwrite(complete_pred_mask,path); 
     
     % Calculating the quantitative evaluators
-    QE(n,:) = 100 .* QE_calcul(complete_pred_mask,gt, classes, conf_matrix_print_out);
+    QE(n,:) = 100 .* QE_calcul(complete_pred_mask, gt, classes, conf_matrix_print_out);
     
     % Preparing evaluators for further saving in excel and txt files 
-    scene_assess (n,:) = [all_uniq_sceneid(n,1),num2str(thresh), num2str(QE(n,1)) , ...
-        num2str(QE(n,2)), num2str(QE(n,3)), num2str(QE(n,4)), num2str(QE(n,5)) ,...
-        '#', num2str(100-QE(n,1)), num2str(100-QE(n,2)), num2str(100-QE(n,3))];
+    scene_assess (n,:) = [all_uniq_sceneid(n,1), num2str(thresh), num2str(QE(n,1)) , ...
+        num2str(QE(n,2)), num2str(QE(n,3)), num2str(QE(n,4)), num2str(QE(n,5))];
 end
 
 % Averaging evaluators over 20 landsat 8 scenes
@@ -99,18 +100,18 @@ fprintf(' %2.3f , %2.3f , %2.3f , %2.3f , %2.3f \n', mean_on_test_data(1,1), ...
     mean_on_test_data(1,5));
 
 %% Saving the evaluators in a excel file
-excel_baseFileName = strcat(complete_folder,'.xlsx');
+excel_baseFileName = strcat('numerical_results_', complete_folder,'.xlsx');
 excelpath = fullfile(preds_folder_root, excel_baseFileName);
 xlswrite(excelpath,{'Scene ID','Threshold','Precision', 'Recall', 'Specificity', 'Jaccard', 'Accuracy',...
-    '#','100-Precision','100-Recall','1-Specificity'},'sheet1', 'A1:K1');        
+    },'sheet1', 'A1:G1');        
 position1 = strcat('A',num2str(2)); 
-position2 = strcat('K',num2str(n+1)); 
+position2 = strcat('G',num2str(n+1)); 
 position = strcat(position1,':',position2);
 xlswrite(excelpath,scene_assess,'sheet1', position);
 
 %% Saving the average of evaluators in a text file
 
-txt_baseFileName = strcat(complete_folder,'.txt');
+txt_baseFileName = strcat('numerical_results_', complete_folder,'.txt');
 txtpath = fullfile(preds_folder_root, txt_baseFileName);
 fileID = fopen(txtpath, 'w');
 fprintf(fileID,'Threshold= \r\n');
@@ -125,7 +126,8 @@ function uniq_sceneid = extract_unique_sceneids(result_root, preds_dir)
     path_4landtype = fullfile (result_root, preds_dir );
     folders_inside_landtype = dir(char(path_4landtype));
     l1 = length(folders_inside_landtype); % number of the patch masks inside the pred flder
-
+    
+    sceneid_lists = {}; 
     for iix = 1:l1-2 
         raw_result_patch_name = char(folders_inside_landtype(iix+2,1).name);
         raw_result_patch_name = strrep(raw_result_patch_name, '.TIF', '');    
