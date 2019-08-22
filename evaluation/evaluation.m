@@ -55,6 +55,11 @@ for n = 1:length(all_uniq_sceneid)
     for pcount = 1:length(scid_related_patches)
         predicted_patch_path =(fullfile (preds_folder_root, preds_folder,scid_related_patches(pcount,1)));
         predicted_patch = imread(char(predicted_patch_path));
+        [w, h] = size(predicted_patch);
+        if w ~= pr_patch_size_rows || h ~= pr_patch_size_cols
+        % resize to 384*384 in the case of predictions with different size from 384*384
+            predicted_patch = imresize(predicted_patch, [pr_patch_size_rows ,pr_patch_size_cols]);
+        end
         predicted_patch =  imbinarize(predicted_patch,thresh);
 
         raw_result_patch_name = char(scid_related_patches(pcount,1));
