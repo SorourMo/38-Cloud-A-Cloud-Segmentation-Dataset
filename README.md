@@ -76,6 +76,8 @@ We have prepared a simple Matlab code to help researchers evaluate their results
 
 5- Name of the patches play an important role to find the exact correct location of patches in a complete scene mask. Please avoid renaming test and predicted patches.
 
+6- The code for Cloud-Net model for training and test on 38-Cloud dataset can be found [here](https://github.com/SorourMo/Cloud-Net-A-semantic-segmentation-CNN-for-cloud-detection/tree/6c30ad6482847c855337baa5f17c24adaf5e5cda).
+
 **************************************
 If you found this dataset useful for your research please cite these two papers:    
 
