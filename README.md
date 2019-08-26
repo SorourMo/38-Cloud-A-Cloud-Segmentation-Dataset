@@ -57,7 +57,7 @@ Below is an example of a 384*384 training patch:
 1. Thin clouds (haze) are also considered as clouds (as well as thick clouds).
 2. Natural color images are false color images used for further visualization purposes. They have not been used in the training and test phase of \[1] and \[2]\.  
 3. Some of the patches do not have useful information (0 pixel values) in them. That is because of the black margins around the Landsat 8 images.
-4. The code for Cloud-Net model for training and test on 38-Cloud dataset can be found [here](https://github.com/SorourMo/Cloud-Net-A-semantic-segmentation-CNN-for-cloud-detection/tree/6c30ad6482847c855337baa5f17c24adaf5e5cda).
+#### 4. The code for Cloud-Net model for training and test on 38-Cloud dataset can be found [here](https://github.com/SorourMo/Cloud-Net-A-semantic-segmentation-CNN-for-cloud-detection/tree/6c30ad6482847c855337baa5f17c24adaf5e5cda).
 
 ## Evaluation over 38-Cloud Dataset:
 We have prepared a simple Matlab code to help researchers evaluate their results obtained by this dataset. You can find it in the "evaluation" directory. Please note that for the sake of consistency we have not provided users with ground truths of each 384*384 test patch, but with the ground truth of the entire Landsat 8 scenes. In order to generate a complete cloud mask from small patch masks and compare it with ground truths, please follow these instructions:
