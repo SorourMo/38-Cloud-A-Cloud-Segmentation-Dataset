@@ -29,6 +29,7 @@ The directory tree of this dataset is as follows:
 #### *Click [here](https://goo.gl/683SHf) for downloading the "entire dataset".*
 #### *Click [here](https://vault.sfu.ca/index.php/s/VRzcxMyoQlBMT2D) for downloading the "test set" separately.*
 #### *Click [here](https://vault.sfu.ca/index.php/s/90HKcQv3wSMO0gD) for downloading the "training set" separately.*
+#### *Click [here](https://www.kaggle.com/sorour/38cloud-cloud-segmentation-in-satellite-images) for downloading the "entire dataset" through Kaggle.*
 
 ### Landsat 8 Spectral Ranges:<br>  
 
