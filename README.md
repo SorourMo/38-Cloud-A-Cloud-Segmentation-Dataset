@@ -82,14 +82,18 @@ We have prepared a simple Matlab code to help researchers evaluate their results
 **************************************
 If you found this dataset useful for your research please cite these two papers:    
 
-```
-@article{38-cloud-1,  
-  author={S. Mohajerani and P. Saeedi},
-  title={{"Cloud-{N}et: {A}n End-to-end Cloud Detection Algorithm for {L}andsat 8 Imagery"}},
-  year={(forthcoming) 2019},
-  archivePrefix={arXiv},
-  note={\textit{to appear at 2019 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)}}
-}
+```  
+@INPROCEEDINGS{38-cloud-1,
+author={S. {Mohajerani} and P. {Saeedi}},
+booktitle={IGARSS 2019 - 2019 IEEE International Geoscience and Remote Sensing Symposium},
+title={Cloud-Net: An End-To-End Cloud Detection Algorithm for Landsat 8 Imagery},
+year={2019},
+volume={},
+number={},
+pages={1029-1032},
+doi={10.1109/IGARSS.2019.8898776},
+ISSN={2153-6996},
+month={July},}
 
 @INPROCEEDINGS{38-cloud-2,   
   author={S. Mohajerani and T. A. Krammer and P. Saeedi},   
@@ -107,7 +111,7 @@ If you found this dataset useful for your research please cite these two papers:
 doi: 10.1109/MMSP.2018.8547095
 URL: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8547095&isnumber=8547039  
 
-[2] S. Mohajerani and P. Saeedi. "Cloud-Net: An End-to-end Cloud Detection Algorithm for Landsat
-8 Imagery". (forthcoming) 2019. to appear at IEEE International Geoscience and Remote
-Sensing Symposium (IGARSS).
-URL: https://arxiv.org/pdf/1901.10077.pdf
+[2] S. Mohajerani and P. Saeedi, "Cloud-Net: An End-To-End Cloud Detection Algorithm for Landsat 8 Imagery," IGARSS 2019 - 2019 IEEE International Geoscience and Remote Sensing Symposium, Yokohama, Japan, 2019, pp. 1029-1032.
+doi: 10.1109/IGARSS.2019.8898776.
+Arxive URL: https://arxiv.org/pdf/1901.10077.pdf, 
+IEEE URL: URL: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8898776&isnumber=8897702
