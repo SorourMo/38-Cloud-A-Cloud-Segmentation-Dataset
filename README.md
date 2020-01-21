@@ -84,16 +84,17 @@ If you found this dataset useful for your research please cite these two papers:
 
 ```  
 @INPROCEEDINGS{38-cloud-1,
-author={S. {Mohajerani} and P. {Saeedi}},
-booktitle={IGARSS 2019 - 2019 IEEE International Geoscience and Remote Sensing Symposium},
-title={Cloud-Net: An End-To-End Cloud Detection Algorithm for Landsat 8 Imagery},
-year={2019},
-volume={},
-number={},
-pages={1029-1032},
-doi={10.1109/IGARSS.2019.8898776},
-ISSN={2153-6996},
-month={July},}
+  author={S. {Mohajerani} and P. {Saeedi}},
+  booktitle={IGARSS 2019 - 2019 IEEE International Geoscience and Remote Sensing Symposium},
+  title={Cloud-Net: An End-To-End Cloud Detection Algorithm for Landsat 8 Imagery},
+  year={2019},
+  volume={},
+  number={},
+  pages={1029-1032},
+  doi={10.1109/IGARSS.2019.8898776},
+  ISSN={2153-6996},
+  month={July},
+}
 
 @INPROCEEDINGS{38-cloud-2,   
   author={S. Mohajerani and T. A. Krammer and P. Saeedi},   
