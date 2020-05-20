@@ -25,11 +25,11 @@ The directory tree of this dataset is as follows:
 │------------├──test_patches_38-Cloud.csv  
 │------------├──test_sceneids_38-Cloud.csv    
   
-    
-#### *Click [here](https://goo.gl/683SHf) for downloading the "entire dataset".*
-#### *Click [here](https://vault.sfu.ca/index.php/s/VRzcxMyoQlBMT2D) for downloading the "test set" separately.*
-#### *Click [here](https://vault.sfu.ca/index.php/s/90HKcQv3wSMO0gD) for downloading the "training set" separately.*
-#### *Click [here](https://www.kaggle.com/sorour/38cloud-cloud-segmentation-in-satellite-images) for downloading the "entire dataset" through Kaggle.*
+#### *Click [here](https://www.kaggle.com/sorour/38cloud-cloud-segmentation-in-satellite-images) for downloading the "entire dataset" through Kaggle.*    
+#### *Click [here](https://goo.gl/683SHf) for downloading the "entire dataset" from another server.*
+<!--#### *Click [here](https://vault.sfu.ca/index.php/s/VRzcxMyoQlBMT2D) for downloading the "test set" separately.*
+#### *Click [here](https://vault.sfu.ca/index.php/s/90HKcQv3wSMO0gD) for downloading the "training set" separately.*-->
+
 
 ### Landsat 8 Spectral Ranges:<br>  
 
@@ -57,7 +57,7 @@ Below is an example of a 384*384 training patch:
 ### Some Important Points:
 1. Thin clouds (haze) are also considered as clouds (as well as thick clouds).
 2. Natural color images are false color images used for further visualization purposes. They have not been used in the training and test phase of \[1] and \[2]\.  
-3. Some of the patches do not have useful information (0 pixel values) in them. That is because of the black margins around the Landsat 8 images.
+3. Some of the patches do not have useful information (0 pixel values) in them. That is because of the black margins around the Landsat 8 images. For your ease, a list in a csv file (training_patches_38-cloud_nonempty.csv) including the names of the informative patches (patches with more than 80% informative/nonzero pixels) can be found in the dataset folder or [here](https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset/issues/6#issuecomment-631736619).
 #### 4. The code for Cloud-Net model for training and test on 38-Cloud dataset can be found [here](https://github.com/SorourMo/Cloud-Net-A-semantic-segmentation-CNN-for-cloud-detection/tree/6c30ad6482847c855337baa5f17c24adaf5e5cda).
 
 ## Evaluation over 38-Cloud Dataset:
@@ -72,7 +72,7 @@ We have prepared a simple Matlab code to help researchers evaluate their results
 
 2- In "preds_folder" there should be all of the obtained patch masks from the test patches. Therefore, "pred_folder" consists of 9201 patches of 384*384. These should be pixel-level probabilities (for example the direct output of the sigmoid (or softmax) activation function in the last layer of a CNN model). The provided code will binarize the probabilities to generate binary masks.
 
-3- The outputs of the mfile are an Excel file and a txt file. The reported numbers in Table 1 of \[1] is the txt file.
+3- The outputs of the mfile are an Excel file and a txt file. The reported numbers in Table 1 of \[1] is from the txt file.
 
 4- Please note that the evaluation metrics will be calculated for each "complete scene" and then averaged over 20 of the scenes in 38-Cloud test set.
 
